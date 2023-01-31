@@ -11,8 +11,7 @@
 </head>
 
 <body>
-
-<h1 class = title><img src="Resources/RU_SHIELD_RED.png"> RUTGERS TIMESSSSSSSS</h1>
+<h1 class = title><img src="Resources/RU_SHIELD_RED.png"> RUTGERS TIMES</h1>
 
 <div class="header">
   <h3>  <span id ='date'></span></h3>

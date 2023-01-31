@@ -17,10 +17,10 @@
     <div class="icon"><i class="far fa-envelope"></i></div>
     <div class="content">
       <header>Join our Newsletter Below!</header>
-      <p>Subscribe to the Rutgers Times to recieve the lastest news from around our community straight to your inbox. All free 
+      <p>Subscribe to the Rutgers Times to receive the latest news from around our community straight to your inbox. All free 
         of charge, just input your email below.</p>
     </div>
-    <form action="index.php" method="POST">
+    <form action="subscription.php" method="POST">
     <?php 
     $userEmail = ""; //first we leave email field blank
     if(isset($_POST['subscribe'])){ //if subscribe btn clicked
@@ -29,7 +29,7 @@
         $subject = "Thanks for choosing to join The Rutgers Times newsletter";
         $message = " We are commited to bringing our subscribers the most up to date news around the community. We are dedicated to safely and securly 
         bringing our members updates on a daily basis. Once again thank you for choosing the Rutgers Times, have a great day!";
-        $sender = "From: TheRutgersTimes@gmail.com";
+        $sender = "From: TheRutgersTimes2023@gmail.com";
         //php function to send mail
         if(mail($userEmail, $subject, $message, $sender)){
           ?>
