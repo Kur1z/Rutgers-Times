@@ -15,6 +15,8 @@
   .container {
     display: flex;
     justify-content: space-between;
+    border-bottom:  3px solid darkgray;
+    margin-bottom: 10px;
   }
 
   .leftElement, .rightElement {
@@ -49,11 +51,13 @@
   .titleDiv{
     display: flex;
     align-items: center;
+   
   }
 
   .logo {
     margin-left: 10px;
     max-width: 50px;
+    margin-right: 10px;
   }
   
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -96,31 +100,40 @@ footer{
 .row{
   display: flex;
   margin-bottom: 20px;
-  
+  font-family: sans-serif;
+  border-bottom: 3px solid black;
+
 }
 
 .middleColumn{
   float: left;
   width: 40%;
-  background-color: gray;
+  background-color: white;
   margin-right: 20px;
+  margin-bottom: 10px;
 
 }
 
 .leftColumn{
   float: left;
   width: 30%;
-  background-color: gray;
+  background-color: white;
   padding-left: 20px;
+  text-align: center;
+  clear: both;
+  margin-bottom: 10px;
+
   
 }
 .rightColumn{
   float: left;
   width: 30%;
-  background-color: gray;
-  
-  
+  background-color: white;
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 10px;
 }
+
 
 .row:after {
   content: "";
@@ -132,7 +145,8 @@ footer{
 .leftImgs img{
 margin-left: 10%;
 width: 80%;
-padding: 20px 20px;
+margin-bottom: 10%;
+padding-top: 20px ;
 height: 500px;
 }
 
@@ -140,6 +154,96 @@ height: 500px;
 .rightImgs img{
  width: 90%; 
  padding: 10px;
- margin-left: 5%;
+ 
 
 }
+
+
+
+
+#description{
+  font-size: larger;
+  
+}
+
+
+ 
+a:visited {color:black;
+text-decoration: none;
+}
+
+a:link { text-decoration: none; }
+a:hover {color:#CC0033;
+}   
+a:link {
+  color: black;
+}
+
+.row img{
+  transition: 1s ease;
+}
+.row img:hover{
+-webkit-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);
+transition: 1s ease;
+}
+
+
+
+.leftColumn #headline{
+  font-family:  Giovanni-Book-Regular;
+  position: relative;
+  min-height: 150px;
+  
+}
+
+.rightColumn p{
+  position: relative;
+}
+.leftColumn #published{
+  margin-top: 100px;
+  
+}
+
+.middleColumn{
+  border-right:  1px solid black;
+}
+
+footer{
+   display: flex;
+    justify-content: space-between;
+    border-bottom:  3px solid darkgray;
+    margin-bottom: 10px;
+}
+
+
+ footer .rightElement button{
+    align-items: center;
+    float: right;
+    margin-top: 5%;
+    margin-right: 40%;
+    transition: 0.4s;
+    background-color: black;
+    padding: 20px;
+    font-family: Giovanni-Book-Regular;
+    font-size: larger;
+    color: white;
+    
+  }
+
+
+ 
+  footer .rightElement button:hover{
+    background-color: #CC0033; /* Green */
+    color: white;
+  }
+
+  footer .title {
+
+  color:  black;
+  font-size: 60px;
+  text-align: center;
+  font-family: Giovanni-Book-Regular;
+  flex-grow: 1;
+  }
