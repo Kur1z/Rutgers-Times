@@ -6,10 +6,11 @@
     <title>The Rutgers Time || Subscription Form</title>
     <link rel="stylesheet" href="subscription.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="Resources/favicon-32x32.png" />
 </head>
 <body>
   <input type="checkbox" id="toggle">
-  <label for="toggle" class="show-btn">Show Modal</label>
+  <label for="toggle" class="show-btn">Subscribe!</label>
   <div class="wrapper">
     <label for="toggle">
     <i class="cancel-icon fas fa-times"></i>
@@ -27,13 +28,13 @@
       $userEmail = $_POST['email']; //getting user entered email
       if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)){ //validating user email
         $subject = "Thanks for choosing to join The Rutgers Times newsletter";
-        $message = " We are commited to bringing our subscribers the most up to date news around the community. We are dedicated to safely and securly 
+        $message = " We are committed to bringing our subscribers the most up to date news around the community. We are dedicated to safely and securely 
         bringing our members updates on a daily basis. Once again thank you for choosing the Rutgers Times, have a great day!";
         $sender = "From: TheRutgersTimes2023@gmail.com";
         //php function to send mail
         if(mail($userEmail, $subject, $message, $sender)){
           ?>
-           <!-- show sucess message once email send successfully -->
+           <!-- show success message once email send successfully -->
           <div class="alert success-alert">
             <?php echo "Thank You for Subscribing " ?>
           </div>
@@ -43,7 +44,7 @@
           ?>
           <!-- show error message if somehow mail can't be sent -->
           <div class="alert error-alert">
-          <?php echo "An Error has occured while attempting to reach your email. Please try again" ?>
+          <?php echo "An Error has occurred while attempting to reach your email. Please try again" ?>
           </div>
           <?php
         }
